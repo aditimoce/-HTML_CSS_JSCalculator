@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+	<script type="text/javascript" src="calculator.js"></script>
+</head>
+<body>
+	<table border="1" width="400" height="600" bgcolor="black">
+		<tr>
+			<td id="result" class="result" colspan="4" rowspan="1" width="400" height="50">0</td>
+		</tr>
+		<tr>
+			<td><button onclick="deleteContent()" class="darkgray">C</button></td>
+			<td><button onclick="plusMinus()" class="plusminus">+/-</button></td>
+			<td><button onclick="percentage()" class="darkgray">%</button></td>
+			<td><button onclick="divide()" class="mustard">/</button></td>
+		</tr>
+		<tr>
+			<td><button onclick="digitPressed(this)" class="digits">7</button></td>
+			<td><button onclick="digitPressed(this)" class="digits">8</button></td>
+			<td><button onclick="digitPressed(this)" class="digits">9</button></td>
+			<td><button onclick="multiply(this)" class="mustard">x</button></td>
+		</tr>
+		<tr>
+			<td><button onclick="digitPressed(this)" class="digits">4</button></td>
+			<td><button onclick="digitPressed(this)" class="digits">5</button></td>
+			<td><button onclick="digitPressed(this)" class="digits">6</button></td>
+			<td><button onclick="minus()" class="mustard">-</button></td>
+		</tr>
+		<tr>
+			<td><button onclick="digitPressed(this)" class="digits">1</button></td>
+			<td><button onclick="digitPressed(this)" class="digits">2</button></td>
+			<td><button onclick="digitPressed(this)" class="digits">3</button></td>
+			<td><button onclick="add()" class="mustard">+</button></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="right"><button onclick="digitPressed(this)" class="digits">0</button></td>
+			<td><button onclick="digitPressed(this)" class="digits">,</button></td>
+			<td><button onclick="equal()" class="mustard">=</button></td>
+		</tr>
+	</table>
+
+</body>
+</html>
